@@ -1,0 +1,64 @@
+.goodBtn {
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-right: 15px;
+  background-color: rgb(91, 204, 91);
+}
+.goodBtn:hover,
+.goodBtn:focus {
+  box-shadow: 5px 5px 12px 0px rgba(102, 99, 99, 0.75);
+  -webkit-box-shadow: 5px 5px 12px 0px rgba(102, 99, 99, 0.75);
+  -moz-box-shadow: 5px 5px 12px 0px rgba(102, 99, 99, 0.75);
+}
+.neutralBtn {
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-right: 15px;
+  background-color: rgb(47, 214, 214);
+}
+.neutralBtn:hover,
+.neutralBtn:focus {
+  box-shadow: 5px 5px 12px 0px rgba(102, 99, 99, 0.75);
+  -webkit-box-shadow: 5px 5px 12px 0px rgba(102, 99, 99, 0.75);
+  -moz-box-shadow: 5px 5px 12px 0px rgba(102, 99, 99, 0.75);
+}
+.badBtn {
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: rgb(245, 42, 42);
+}
+.badBtn:hover,
+.badBtn:focus {
+  box-shadow: 5px 5px 12px 0px rgba(102, 99, 99, 0.75);
+  -webkit-box-shadow: 5px 5px 12px 0px rgba(102, 99, 99, 0.75);
+  -moz-box-shadow: 5px 5px 12px 0px rgba(102, 99, 99, 0.75);
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  box-shadow: 5px 5px 12px 0px rgba(102, 99, 99, 0.75);
+  -webkit-box-shadow: 5px 5px 12px 0px rgba(102, 99, 99, 0.75);
+  -moz-box-shadow: 5px 5px 12px 0px rgba(102, 99, 99, 0.75);
+}
+
+.textInfo {
+  font-size: 18px;
+  font-weight: 500;
+}
