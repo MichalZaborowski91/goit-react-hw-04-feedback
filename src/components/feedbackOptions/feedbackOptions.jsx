@@ -1,42 +1,33 @@
-import React, { Component } from 'react';
+import React from 'react';
 import css from './feedbackOptions.module.css';
 
-class FeedbackOptions extends Component {
-  handleGoodBtn = () => {
-    this.props.onFeedbackChange('good');
+const FeedbackOptions = ({ onFeedbackChange }) => {
+  const handleGoodBtn = () => {
+    onFeedbackChange('good');
   };
-  handleNeutralBtn = () => {
-    this.props.onFeedbackChange('neutral');
+  const handleNeutralBtn = () => {
+    onFeedbackChange('neutral');
   };
-  handleBadBtn = () => {
-    this.props.onFeedbackChange('bad');
+  const handleBadBtn = () => {
+    onFeedbackChange('bad');
   };
-  render() {
-    return (
-      <div>
-        <button
-          className={css.goodBtn}
-          type="button"
-          onClick={this.handleGoodBtn}
-        >
-          Good
-        </button>
-        <button
-          className={css.neutralBtn}
-          type="button"
-          onClick={this.handleNeutralBtn}
-        >
-          Neutral
-        </button>
-        <button
-          className={css.badBtn}
-          type="button"
-          onClick={this.handleBadBtn}
-        >
-          Bad
-        </button>
-      </div>
-    );
-  }
-}
+
+  return (
+    <div>
+      <button className={css.goodBtn} type="button" onClick={handleGoodBtn}>
+        Good
+      </button>
+      <button
+        className={css.neutralBtn}
+        type="button"
+        onClick={handleNeutralBtn}
+      >
+        Neutral
+      </button>
+      <button className={css.badBtn} type="button" onClick={handleBadBtn}>
+        Bad
+      </button>
+    </div>
+  );
+};
 export default FeedbackOptions;
