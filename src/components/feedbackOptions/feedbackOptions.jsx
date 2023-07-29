@@ -1,15 +1,19 @@
 import React from 'react';
 import css from './feedbackOptions.module.css';
 
-const FeedbackOptions = ({ onFeedbackChange }) => {
+const FeedbackOptions = ({
+  onFeedbackChangeGood,
+  onFeedbackChangeNeutral,
+  onFeedbackChangeBad,
+}) => {
   const handleGoodBtn = () => {
-    onFeedbackChange('good');
+    onFeedbackChangeGood('good');
   };
   const handleNeutralBtn = () => {
-    onFeedbackChange('neutral');
+    onFeedbackChangeNeutral('neutral');
   };
   const handleBadBtn = () => {
-    onFeedbackChange('bad');
+    onFeedbackChangeBad('bad');
   };
 
   return (
